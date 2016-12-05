@@ -10,8 +10,8 @@
       <TargetName>LPC4357 Flash</TargetName>
       <ToolsetNumber>0x4</ToolsetNumber>
       <ToolsetName>ARM-ADS</ToolsetName>
-      <pArmCC>6060000::V6.6::.\ARMCLANG</pArmCC>
-      <pCCUsed>6060000::V6.6::.\ARMCLANG</pCCUsed>
+      <pArmCC>5060422::V5.06 update 4 (build 422)::ARMCC</pArmCC>
+      <pCCUsed>5060422::V5.06 update 4 (build 422)::ARMCC</pCCUsed>
       <TargetOption>
         <TargetCommonOption>
           <Device>LPC4357:Cortex-M4</Device>
@@ -183,7 +183,7 @@
             <hadIRAM>1</hadIRAM>
             <hadXRAM>0</hadXRAM>
             <uocXRam>0</uocXRam>
-            <RvdsVP>1</RvdsVP>
+            <RvdsVP>2</RvdsVP>
             <hadIRAM2>1</hadIRAM2>
             <hadIROM2>1</hadIROM2>
             <StupSel>8</StupSel>
@@ -381,9 +381,29 @@
           <GroupName>Source Files</GroupName>
           <Files>
             <File>
-              <FileName>Main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Main.c</FilePath>
+              <FileName>LED.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\LED.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>LED.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\LED.h</FilePath>
+            </File>
+            <File>
+              <FileName>Main.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\Main.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>LCD.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\LCD.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>LCD.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\LCD.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -402,6 +422,9 @@
         </Group>
         <Group>
           <GroupName>::CMSIS</GroupName>
+        </Group>
+        <Group>
+          <GroupName>::CMSIS Driver</GroupName>
         </Group>
         <Group>
           <GroupName>::Device</GroupName>
@@ -782,9 +805,29 @@
           <GroupName>Source Files</GroupName>
           <Files>
             <File>
-              <FileName>Main.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Main.c</FilePath>
+              <FileName>LED.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\LED.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>LED.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\LED.h</FilePath>
+            </File>
+            <File>
+              <FileName>Main.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\Main.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>LCD.cpp</FileName>
+              <FileType>8</FileType>
+              <FilePath>.\LCD.cpp</FilePath>
+            </File>
+            <File>
+              <FileName>LCD.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\LCD.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -805,6 +848,9 @@
           <GroupName>::CMSIS</GroupName>
         </Group>
         <Group>
+          <GroupName>::CMSIS Driver</GroupName>
+        </Group>
+        <Group>
           <GroupName>::Device</GroupName>
         </Group>
       </Groups>
@@ -813,8 +859,22 @@
 
   <RTE>
     <apis>
+      <api Capiversion="1.00" Cclass="Board Support" Cgroup="Graphic LCD" exclusive="0">
+        <package name="MDK-Middleware" schemaVersion="1.4" url="http://www.keil.com/pack/" vendor="Keil" version="7.3.0"/>
+        <targetInfos>
+          <targetInfo name="LPC4357 Flash"/>
+          <targetInfo name="LPC4357 RAM"/>
+        </targetInfos>
+      </api>
       <api Capiversion="1.00" Cclass="Board Support" Cgroup="LED" exclusive="0">
         <package name="MDK-Middleware" schemaVersion="1.0" url="http://www.keil.com/pack/" vendor="Keil" version="5.99.1"/>
+        <targetInfos>
+          <targetInfo name="LPC4357 Flash"/>
+          <targetInfo name="LPC4357 RAM"/>
+        </targetInfos>
+      </api>
+      <api Capiversion="2.01" Cclass="CMSIS Driver" Cgroup="SPI" exclusive="0">
+        <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.0.0"/>
         <targetInfos>
           <targetInfo name="LPC4357 Flash"/>
           <targetInfo name="LPC4357 RAM"/>
@@ -823,14 +883,29 @@
       <api Cclass="CMSIS" Cgroup="RTOS" exclusive="0">
         <package name="CMSIS" url="http://www.keil.com/pack/" vendor="ARM" version="3.20.0"/>
         <targetInfos>
-          <targetInfo name="LPC4357 Flash"/>
-          <targetInfo name="LPC4357 RAM"/>
+          <targetInfo name="LPC4357 Flash">
+            <c>
+              <MiscControls>--c99</MiscControls>
+            </c>
+          </targetInfo>
+          <targetInfo name="LPC4357 RAM">
+            <c>
+              <MiscControls>--c99</MiscControls>
+            </c>
+          </targetInfo>
         </targetInfos>
       </api>
     </apis>
     <components>
-      <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="3.30.0" condition="CMSIS Core">
-        <package name="CMSIS" schemaVersion="1.0" url="http://www.keil.com/pack/" vendor="ARM" version="4.0.1"/>
+      <component Cclass="CMSIS" Cgroup="CORE" Cvendor="ARM" Cversion="5.0.0" condition="ARMv6_7_8-M Device">
+        <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.0.0"/>
+        <targetInfos>
+          <targetInfo name="LPC4357 Flash"/>
+          <targetInfo name="LPC4357 RAM"/>
+        </targetInfos>
+      </component>
+      <component Cclass="CMSIS" Cgroup="DSP" Cvendor="ARM" Cversion="1.4.6" condition="CMSIS DSP">
+        <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.0.0"/>
         <targetInfos>
           <targetInfo name="LPC4357 Flash"/>
           <targetInfo name="LPC4357 RAM"/>
@@ -838,6 +913,21 @@
       </component>
       <component Capiversion="1.0" Cclass="CMSIS" Cgroup="RTOS" Csub="Keil RTX" Cvendor="ARM" Cversion="4.81.0" condition="RTOS RTX">
         <package name="CMSIS" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="ARM" version="5.0.0"/>
+        <targetInfos>
+          <targetInfo name="LPC4357 Flash">
+            <c>
+              <MiscControls>--c99</MiscControls>
+            </c>
+          </targetInfo>
+          <targetInfo name="LPC4357 RAM">
+            <c>
+              <MiscControls>--c99</MiscControls>
+            </c>
+          </targetInfo>
+        </targetInfos>
+      </component>
+      <component Capiversion="1.00" Cbundle="MCB4300" Cclass="Board Support" Cgroup="Graphic LCD" Cvendor="Keil" Cversion="1.0.0" condition="LPC4300 CMSIS SCU GPIO SPI">
+        <package name="LPC4300_DFP" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="Keil" version="2.7.0"/>
         <targetInfos>
           <targetInfo name="LPC4357 Flash"/>
           <targetInfo name="LPC4357 RAM"/>
@@ -850,15 +940,36 @@
           <targetInfo name="LPC4357 RAM"/>
         </targetInfos>
       </component>
-      <component Cclass="Device" Cgroup="GPIO" Cvendor="Keil" Cversion="1.00" condition="LPC4300 CMSIS">
-        <package name="LPC4300_DFP" schemaVersion="1.2" url="http://www.keil.com/pack/" vendor="Keil" version="1.99.0"/>
+      <component Capiversion="2.1" Cclass="CMSIS Driver" Cgroup="SPI" Cvendor="Keil" Cversion="2.6" condition="LPC4300 CMSIS SCU GPIO">
+        <package name="LPC4300_DFP" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="Keil" version="2.7.0"/>
         <targetInfos>
           <targetInfo name="LPC4357 Flash"/>
           <targetInfo name="LPC4357 RAM"/>
         </targetInfos>
       </component>
-      <component Cclass="Device" Cgroup="SCU" Cvendor="Keil" Cversion="1.00" condition="LPC4300 CMSIS">
-        <package name="LPC4300_DFP" schemaVersion="1.2" url="http://www.keil.com/pack/" vendor="Keil" version="1.99.0"/>
+      <component Capiversion="2.1" Cclass="CMSIS Driver" Cgroup="SPI" Csub="SSP" Cvendor="Keil" Cversion="2.10" condition="LPC4300 CMSIS SCU GPIO GPDMA">
+        <package name="LPC4300_DFP" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="Keil" version="2.7.0"/>
+        <targetInfos>
+          <targetInfo name="LPC4357 Flash"/>
+          <targetInfo name="LPC4357 RAM"/>
+        </targetInfos>
+      </component>
+      <component Cclass="Device" Cgroup="GPDMA" Cvendor="Keil" Cversion="1.5" condition="LPC4300 CMSIS">
+        <package name="LPC4300_DFP" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="Keil" version="2.7.0"/>
+        <targetInfos>
+          <targetInfo name="LPC4357 Flash"/>
+          <targetInfo name="LPC4357 RAM"/>
+        </targetInfos>
+      </component>
+      <component Cclass="Device" Cgroup="GPIO" Cvendor="Keil" Cversion="1.0" condition="LPC4300 CMSIS">
+        <package name="LPC4300_DFP" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="Keil" version="2.7.0"/>
+        <targetInfos>
+          <targetInfo name="LPC4357 Flash"/>
+          <targetInfo name="LPC4357 RAM"/>
+        </targetInfos>
+      </component>
+      <component Cclass="Device" Cgroup="SCU" Cvendor="Keil" Cversion="1.1" condition="LPC4300 CMSIS">
+        <package name="LPC4300_DFP" schemaVersion="1.3" url="http://www.keil.com/pack/" vendor="Keil" version="2.7.0"/>
         <targetInfos>
           <targetInfo name="LPC4357 Flash"/>
           <targetInfo name="LPC4357 RAM"/>

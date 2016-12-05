@@ -11,25 +11,17 @@
 #include "cmsis_os.h"
 #include "LPC43xx.h"
 #include "Board_LED.h"
+#include "LED.h"
+#include "LCD.h"
 
 osThreadId tid_system;                  /* Thread id of thread: system      */
 
 
-#define LED_A   0
-
 /*----------------------------------------------------------------------------
- *      Switch LED on
+ *      Global Hardware Definitions
  *---------------------------------------------------------------------------*/
-void Switch_On (unsigned char led) {
-  LED_On(led);
-}
-
-/*----------------------------------------------------------------------------
- *      Switch LED off
- *---------------------------------------------------------------------------*/
-void Switch_Off (unsigned char led) {
-  LED_Off(led);
-}
+LED Led_0(0);
+LCD LCD_0(0);
 
 
 /*----------------------------------------------------------------------------
@@ -37,14 +29,15 @@ void Switch_Off (unsigned char led) {
  *---------------------------------------------------------------------------*/
 void system (void const *argument) {
   for (;;) {
-    osSignalWait(0x0001, osWaitForever);    /* wait for an event flag 0x0001 */
-    Switch_On (LED_A);
-		osSignalWait(0x0001, osWaitForever);    /* wait for an event flag 0x0001 */
-    Switch_Off(LED_A);
+    osSignalWait(0x0001, osWaitForever);    
+    Led_0.On();
+		osSignalWait(0x0001, osWaitForever);    
+    Led_0.Off();
   }
 }
 
 osThreadDef(system, osPriorityNormal, 1, 0);
+
 
 
 /*----------------------------------------------------------------------------
@@ -52,11 +45,14 @@ osThreadDef(system, osPriorityNormal, 1, 0);
  *---------------------------------------------------------------------------*/
 int main (void) {
 
-  LED_Initialize();                         
+  LED::Initialize();    
+	LCD::Initialize();
+	
   tid_system = osThreadCreate(osThread(system), NULL);
+	LCD_0.Show_Page_Main();
          
   while(1){
-		osDelay(500);
+		osDelay(250);
 		osSignalSet(tid_system, 0x0001); 
 	}
 }
