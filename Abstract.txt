@@ -1,0 +1,32 @@
+The RTX_Main project is a simple RTX Kernel based example
+for the NXP 'LPC4357' microcontroller using Keil 'MCB4300'
+Evaluation Board, compliant to Cortex Microcontroller
+Software Interface Standard (CMSIS V2.0).
+
+Example functionality:
+ - Clock Settings:
+   - XTAL    =  12 MHz
+   - CPU     = 180 MHz
+
+The simple RTX Kernel based example simulates the step-motor 
+driver. Four LEDs are blinking simulating the activation of 
+the four output driver stages:
+
+- phase A
+- phase B
+- phase C
+- phase D
+
+This example simulates Half step driver mode and
+CW rotation direction.
+
+
+The Main example program is available for several targets:
+
+  LPC4357 Flash:       configured for on-chip Flash
+                       Valid Flash Signature is created with ElfDwT tool.
+                       See "Options for Target" - "User"
+
+
+  LPC4357 RAM:         runs from Internal RAM located on chip
+                       (may be used for target debugging)
