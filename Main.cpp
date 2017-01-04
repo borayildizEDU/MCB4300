@@ -18,7 +18,7 @@ osThreadId tid_system;                  /* Thread id of thread: system      */
 
 
 /*----------------------------------------------------------------------------
- *      Global Hardware Definitions
+ *      Hardware Definitions
  *---------------------------------------------------------------------------*/
 LED Led_0(0);
 LCD LCD_0(0);
