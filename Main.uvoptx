@@ -81,18 +81,173 @@
       <Books>
         <Book>
           <Number>0</Number>
+          <Title>Quick Start Guide (FRDM-KL25Z)</Title>
+          <Path>E:\KeilNightlyBuilds\2016_11_11__13_30_RELEASE\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Boards\NXP\FRDM-KL25Z\Documents\FRDM-KL25Z_QSG.pdf</Path>
+        </Book>
+        <Book>
+          <Number>1</Number>
+          <Title>User Manual (FRDM-KL25Z)</Title>
+          <Path>E:\KeilNightlyBuilds\2016_11_11__13_30_RELEASE\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Boards\NXP\FRDM-KL25Z\Documents\FRDM-KL25Z_UM.pdf</Path>
+        </Book>
+        <Book>
+          <Number>2</Number>
+          <Title>Schematics (FRDM-KL43Z)</Title>
+          <Path>E:\KeilNightlyBuilds\2016_11_11__13_30_RELEASE\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Boards\NXP\FRDM-KL43Z\Documents\FRDM-KL43Z_SCH.pdf</Path>
+        </Book>
+        <Book>
+          <Number>3</Number>
+          <Title>User Manual (FRDM-KL43Z)</Title>
+          <Path>E:\KeilNightlyBuilds\2016_11_11__13_30_RELEASE\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Boards\NXP\FRDM-KL43Z\Documents\FRDMKL43ZUG.pdf</Path>
+        </Book>
+        <Book>
+          <Number>4</Number>
+          <Title>Schematics (TWR-KL43Z48M)</Title>
+          <Path>E:\KeilNightlyBuilds\2016_11_11__13_30_RELEASE\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Boards\NXP\TWR-KL43Z48M\Documents\TWR-KL43Z48M_SCH.pdf</Path>
+        </Book>
+        <Book>
+          <Number>5</Number>
+          <Title>TWR-KL43Z48M Quick Start Guide (TWR-KL43Z48M)</Title>
+          <Path>E:\KeilNightlyBuilds\2016_11_11__13_30_RELEASE\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Boards\NXP\TWR-KL43Z48M\Documents\TWRKL43Z48MQSG.pdf</Path>
+        </Book>
+        <Book>
+          <Number>6</Number>
+          <Title>User Manual (TWR-KL43Z48M)</Title>
+          <Path>E:\KeilNightlyBuilds\2016_11_11__13_30_RELEASE\ARM\PACK\Keil\Kinetis_KLxx_DFP\1.12.0\Boards\NXP\TWR-KL43Z48M\Documents\TWRKL43ZUG.pdf</Path>
+        </Book>
+        <Book>
+          <Number>7</Number>
+          <Title>MCB1700 Schematics (MCB1700)</Title>
+          <Path>E:\KeilNightlyBuilds\2016_11_11__13_30_RELEASE\ARM\PACK\Keil\LPC1700_DFP\2.2.0\Documents\mcb1700-schematics.pdf</Path>
+        </Book>
+        <Book>
+          <Number>8</Number>
+          <Title>User Manual (MCB1700)</Title>
+          <Path>E:\KeilNightlyBuilds\2016_11_11__13_30_RELEASE\ARM\PACK\Keil\LPC1700_DFP\2.2.0\Documents\mcb1700.chm</Path>
+        </Book>
+        <Book>
+          <Number>9</Number>
+          <Title>MCB1700 Quick Start Guide (MCB1700)</Title>
+          <Path>E:\KeilNightlyBuilds\2016_11_11__13_30_RELEASE\ARM\PACK\Keil\LPC1700_DFP\2.2.0\Documents\mcb1700_quickstart.pdf</Path>
+        </Book>
+        <Book>
+          <Number>10</Number>
+          <Title>Quick Start Guide (MCB1800)</Title>
+          <Path>E:\KeilNightlyBuilds\2016_11_11__13_30_RELEASE\ARM\PACK\Keil\LPC1800_DFP\2.7.0-dev16\Documents\MCB1800_QSG.pdf</Path>
+        </Book>
+        <Book>
+          <Number>11</Number>
+          <Title>MCB1800 Schematics (MCB1800)</Title>
+          <Path>E:\KeilNightlyBuilds\2016_11_11__13_30_RELEASE\ARM\PACK\Keil\LPC1800_DFP\2.7.0-dev16\Documents\MCB1800v1-3-schematics.pdf</Path>
+        </Book>
+        <Book>
+          <Number>12</Number>
+          <Title>User Manual (MCB1800)</Title>
+          <Path>E:\KeilNightlyBuilds\2016_11_11__13_30_RELEASE\ARM\PACK\Keil\LPC1800_DFP\2.7.0-dev16\Documents\mcb1800.chm</Path>
+        </Book>
+        <Book>
+          <Number>13</Number>
+          <Title>Quick Start Guide (LPC4330-Xplorer)</Title>
+          <Path>E:\KeilNightlyBuilds\2016_11_11__13_30_RELEASE\ARM\PACK\Keil\LPC4300_DFP\2.7.0\Documents\LPC433x_xplorer_QSG.pdf</Path>
+        </Book>
+        <Book>
+          <Number>14</Number>
+          <Title>LPC4330 Xplorer: Blinky Lab (LPC4330-Xplorer)</Title>
+          <Path>E:\KeilNightlyBuilds\2016_11_11__13_30_RELEASE\ARM\PACK\Keil\LPC4300_DFP\2.7.0\Documents\NXP_Blinky_Lab.pdf</Path>
+        </Book>
+        <Book>
+          <Number>15</Number>
           <Title>User Manual (MCB4300)</Title>
           <Path>E:\KeilNightlyBuilds\2016_11_11__13_30_RELEASE\ARM\PACK\Keil\LPC4300_DFP\2.7.0\Documents\mcb1800.chm</Path>
         </Book>
         <Book>
-          <Number>1</Number>
+          <Number>16</Number>
           <Title>MCB4300 Schematics (MCB4300)</Title>
           <Path>E:\KeilNightlyBuilds\2016_11_11__13_30_RELEASE\ARM\PACK\Keil\LPC4300_DFP\2.7.0\Documents\mcb4300v1-3-schematics.pdf</Path>
         </Book>
         <Book>
-          <Number>2</Number>
+          <Number>17</Number>
+          <Title>Application Note AN382: ARM Cortex-M0 SMM on V2M-MPS2 (V2M-MPS2)</Title>
+          <Path>E:\KeilNightlyBuilds\2016_11_11__13_30_RELEASE\ARM\PACK\Keil\V2M-MPS2_CMx_BSP\1.5.0-dev3\Boards\ARM\V2M-MPS2\Documents\DAI0382C_cortex_m0_on_v2m_mps2.pdf</Path>
+        </Book>
+        <Book>
+          <Number>18</Number>
+          <Title>Application Note AN383: ARM Cortex-M0+ SMM on V2M-MPS2 (V2M-MPS2)</Title>
+          <Path>E:\KeilNightlyBuilds\2016_11_11__13_30_RELEASE\ARM\PACK\Keil\V2M-MPS2_CMx_BSP\1.5.0-dev3\Boards\ARM\V2M-MPS2\Documents\DAI0383C_cortex_m0plus_on_v2m_mps2.pdf</Path>
+        </Book>
+        <Book>
+          <Number>19</Number>
+          <Title>Application Note AN385: ARM Cortex-M3 SMM on V2M-MPS2 (V2M-MPS2)</Title>
+          <Path>E:\KeilNightlyBuilds\2016_11_11__13_30_RELEASE\ARM\PACK\Keil\V2M-MPS2_CMx_BSP\1.5.0-dev3\Boards\ARM\V2M-MPS2\Documents\DAI0385C_cortex_m3_on_v2m_mps2.pdf</Path>
+        </Book>
+        <Book>
+          <Number>20</Number>
+          <Title>Application Note AN386: ARM Cortex-M4 SMM on V2M-MPS2 (V2M-MPS2)</Title>
+          <Path>E:\KeilNightlyBuilds\2016_11_11__13_30_RELEASE\ARM\PACK\Keil\V2M-MPS2_CMx_BSP\1.5.0-dev3\Boards\ARM\V2M-MPS2\Documents\DAI0386C_cortex_m4_on_v2m_mps2.pdf</Path>
+        </Book>
+        <Book>
+          <Number>21</Number>
+          <Title>Application Note AN399: ARM Cortex-M7 SMM on V2M-MPS2 (V2M-MPS2)</Title>
+          <Path>E:\KeilNightlyBuilds\2016_11_11__13_30_RELEASE\ARM\PACK\Keil\V2M-MPS2_CMx_BSP\1.5.0-dev3\Boards\ARM\V2M-MPS2\Documents\DAI0399C_cortex_m7_on_v2m_mps2.pdf</Path>
+        </Book>
+        <Book>
+          <Number>22</Number>
+          <Title>Cortex-M System Design Kit Technical Reference Manual (V2M-MPS2)</Title>
+          <Path>E:\KeilNightlyBuilds\2016_11_11__13_30_RELEASE\ARM\PACK\Keil\V2M-MPS2_CMx_BSP\1.5.0-dev3\Boards\ARM\V2M-MPS2\Documents\DDI0479C_cortex_m_system_design_kit_r1p0_trm.pdf</Path>
+        </Book>
+        <Book>
+          <Number>23</Number>
+          <Title>LPC4330-Xplorer Web Page (LPC4330-Xplorer)</Title>
+          <Path>http://shop.ngxtechnologies.com/product_info.php?products_id=104</Path>
+        </Book>
+        <Book>
+          <Number>24</Number>
+          <Title>Cortex-M Prototyping System (web page) (V2M-MPS2)</Title>
+          <Path>http://www.arm.com/products/tools/development-boards/versatile-express/cortex-m-prototyping-system.php</Path>
+        </Book>
+        <Book>
+          <Number>25</Number>
+          <Title>MCB1700 Evaluation Board Web Page (MCB1700)</Title>
+          <Path>http://www.keil.com/mcb1700/</Path>
+        </Book>
+        <Book>
+          <Number>26</Number>
+          <Title>MCB1800 Evaluation Board Web Page (MCB1800)</Title>
+          <Path>http://www.keil.com/mcb1800/</Path>
+        </Book>
+        <Book>
+          <Number>27</Number>
           <Title>MCB4300 Evaluation Board Web Page (MCB4300)</Title>
           <Path>http://www.keil.com/mcb4300/</Path>
+        </Book>
+        <Book>
+          <Number>28</Number>
+          <Title>FRDM-KL25Z Web Page (FRDM-KL25Z)</Title>
+          <Path>http://www.nxp.com/products/software-and-tools/hardware-development-tools/freedom-development-boards/freedom-development-platform-for-kinetis-kl14-kl15-kl24-kl25-mcus:FRDM-KL25Z</Path>
+        </Book>
+        <Book>
+          <Number>29</Number>
+          <Title>TWR-KL43Z48M Web Page (TWR-KL43Z48M)</Title>
+          <Path>http://www.nxp.com/products/software-and-tools/hardware-development-tools/tower-development-boards/mcu-and-processor-modules/kinetis-modules/kinetis-kl43-kl33-kl27-kl17-48-mhz-mcus-tower-system-module:TWR-KL43Z48M</Path>
+        </Book>
+        <Book>
+          <Number>30</Number>
+          <Title>MSP432 Hardware Tools User's Guide (MSP-TS432PZ100)</Title>
+          <Path>http://www.ti.com/lit/pdf/slau571</Path>
+        </Book>
+        <Book>
+          <Number>31</Number>
+          <Title>MSP432 Quick Start Guide (MSP-EXP432P401R)</Title>
+          <Path>http://www.ti.com/lit/pdf/slau596</Path>
+        </Book>
+        <Book>
+          <Number>32</Number>
+          <Title>LaunchPad Development Kit User's Guide (MSP-EXP432P401R)</Title>
+          <Path>http://www.ti.com/lit/pdf/slau597</Path>
+        </Book>
+        <Book>
+          <Number>33</Number>
+          <Title>MSP432P401R LaunchPad Web page (MSP-EXP432P401R)</Title>
+          <Path>http://www.ti.com/tool/msp-exp432p401r</Path>
         </Book>
       </Books>
       <DebugOpt>
@@ -449,6 +604,30 @@
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
+    <File>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>6</FileNumber>
+      <FileType>8</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\SingleLinkedList.cpp</PathWithFileName>
+      <FilenameWithoutPath>SingleLinkedList.cpp</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>7</FileNumber>
+      <FileType>5</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\SingleLinkedList.h</PathWithFileName>
+      <FilenameWithoutPath>SingleLinkedList.h</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
   </Group>
 
   <Group>
@@ -459,7 +638,7 @@
     <RteFlg>0</RteFlg>
     <File>
       <GroupNumber>2</GroupNumber>
-      <FileNumber>6</FileNumber>
+      <FileNumber>8</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
@@ -481,7 +660,7 @@
 
   <Group>
     <GroupName>::CMSIS</GroupName>
-    <tvExp>0</tvExp>
+    <tvExp>1</tvExp>
     <tvExpOptDlg>0</tvExpOptDlg>
     <cbSel>0</cbSel>
     <RteFlg>1</RteFlg>
